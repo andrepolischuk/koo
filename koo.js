@@ -10,13 +10,13 @@
    * @return {Object}
    * @api private
    */
-  
+
   var getCookies = function() {
 
     var result = {};
 
     if (document.cookie && document.cookie !== '') {
-      
+
       var cookie;
       var cookies = document.cookie.split(';');
 
@@ -43,7 +43,7 @@
    * @param {Object} options
    * @api private
    */
-  
+
   var setCookie = function(name, value, options) {
 
     if (name !== undefined && value !== undefined) {
@@ -82,7 +82,7 @@
    * Initialize object
    * @api public
    */
-  
+
   var koo = function() {
 
   };
@@ -92,7 +92,7 @@
    * @param {String} name
    * @api public
    */
-  
+
   koo.get = function(name) {
 
     var cookies = getCookies();
@@ -107,11 +107,11 @@
    * @param {Object} options
    * @api public
    */
-  
+
   koo.set = function(name, value, options) {
 
     setCookie(name, value, options);
-    
+
   };
 
   /**
@@ -119,7 +119,7 @@
    * @param {String} name
    * @api public
    */
-  
+
   koo.remove = function(name) {
 
     var value   = '';
@@ -133,6 +133,20 @@
    * Module exports
    */
 
-  window.koo = koo; 
+  if (typeof define === 'function' && define.amd) {
 
-}();
+    define([], function() {
+      return koo;
+    });
+
+  } else if (typeof module !== 'undefined' && module.exports) {
+
+    module.exports = koo;
+
+  } else {
+
+    this.koo = koo;
+
+  }
+
+}.call(this);
