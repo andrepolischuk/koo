@@ -7,7 +7,7 @@
   Via script tag in page sources:
 
 ```html
-<script src="/static/js/koo.min.js"></script>
+<script src="//cdn.rawgit.com/andrepolischuk/koo/1.0.1/koo.min.js"></script>
 ```
 
 ## API
