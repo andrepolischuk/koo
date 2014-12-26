@@ -1,7 +1,7 @@
 // Koo © 2014 Andrey Polischuk
 // https://github.com/andrepolischuk/koo
 
-!function(undefined) {
+!function() {
 
   'use strict';
 
@@ -11,16 +11,15 @@
    * @api private
    */
 
-  var getCookies = function() {
+  function getCookies() {
 
     var result = {};
 
     if (document.cookie && document.cookie !== '') {
 
-      var cookie;
       var cookies = document.cookie.split(';');
 
-      for (var i = 0; i < cookies.length; i++) {
+      for (var i = 0, cookie; i < cookies.length; i++) {
 
         // define item
         cookie = cookies[i].replace(/^(\s|\u00A0)+/g, '').split('=');
@@ -34,7 +33,7 @@
 
     return result;
 
-  };
+  }
 
   /**
    * Set document cookie
@@ -44,7 +43,7 @@
    * @api private
    */
 
-  var setCookie = function(name, value, options) {
+  function setCookie(name, value, options) {
 
     if (name !== undefined && value !== undefined) {
 
@@ -52,11 +51,11 @@
 
       var expires = '';
 
-      if (options.expires && ('number' === typeof options.expires || options.expires.toUTCString)) {
+      if (options.expires && (typeof options.expires === 'number' || options.expires.toUTCString)) {
 
         var date;
 
-        if ('number' === typeof options.expires) {
+        if (typeof options.expires === 'number') {
           date = new Date();
           date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
         } else {
@@ -76,16 +75,16 @@
 
     }
 
-  };
+  }
 
   /**
    * Initialize object
    * @api public
    */
 
-  var koo = function() {
+  function koo() {
 
-  };
+  }
 
   /**
    * Get cookie
@@ -94,10 +93,8 @@
    */
 
   koo.get = function(name) {
-
     var cookies = getCookies();
     return name ? cookies[name] : cookies;
-
   };
 
   /**
@@ -109,9 +106,7 @@
    */
 
   koo.set = function(name, value, options) {
-
     setCookie(name, value, options);
-
   };
 
   /**
@@ -121,12 +116,7 @@
    */
 
   koo.remove = function(name) {
-
-    var value   = '';
-    var expires = -1;
-
-    setCookie(name, value, { 'expires' : expires });
-
+    setCookie(name, '', { 'expires' : -1 });
   };
 
   /**
