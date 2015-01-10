@@ -7,7 +7,7 @@
   Browser:
 
 ```html
-<script src="https://cdn.rawgit.com/andrepolischuk/koo/1.0.1/koo.min.js"></script>
+<script src="https://cdn.rawgit.com/andrepolischuk/koo/1.1.0/koo.min.js"></script>
 ```
 
   Component(1):
