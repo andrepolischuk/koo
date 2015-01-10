@@ -1,0 +1,16 @@
+{
+  "name": "koo",
+  "description": "Client-side cookies reader & writer",
+  "version": "1.0.1",
+  "keywords": [
+    "cookie",
+    "cookies"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrepolischuk/koo.git"
+  },
+  "main": "koo.js",
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT"
+}
