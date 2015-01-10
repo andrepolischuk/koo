@@ -4,10 +4,22 @@
 
 ## Instalation
 
-  Via script tag in page sources:
+  Browser:
 
 ```html
-<script src="//cdn.rawgit.com/andrepolischuk/koo/1.0.1/koo.min.js"></script>
+<script src="https://cdn.rawgit.com/andrepolischuk/koo/1.0.1/koo.min.js"></script>
+```
+
+  Component(1):
+
+```sh
+$ component install andrepolischuk/koo
+```
+
+  Npm:
+
+```sh
+$ npm install koo
 ```
 
 ## API
