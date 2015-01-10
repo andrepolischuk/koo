@@ -1,5 +1,5 @@
-// Koo © 2014 Andrey Polischuk
-// https://github.com/andrepolischuk/koo
+// Koo © 2014-2015 Andrey Polischuk
+// github.com/andrepolischuk/koo
 
 !function() {
 
