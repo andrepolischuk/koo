@@ -1,0 +1,15 @@
+{
+  "name": "koo",
+  "description": "Client-side cookies reader & writer",
+  "version": "1.0.1",
+  "keywords": [
+    "cookie",
+    "cookies"
+  ],
+  "repository": "andrepolischuk/koo",
+  "main" : "koo.js",
+  "scripts" : [
+    "koo.js"
+  ],
+  "license": "MIT"
+}
