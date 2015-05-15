@@ -1,51 +1,28 @@
-# Koo
+# koo
 
-  Client-side cookies reader & writer
+  > Client-side cookies reader & writer
 
 ## Instalation
 
-  Browser:
-
-```html
-<script src="https://cdn.rawgit.com/andrepolischuk/koo/1.1.0/koo.min.js"></script>
-```
-
-  Component(1):
-
 ```sh
+$ npm install --save koo
 $ component install andrepolischuk/koo
-```
-
-  Npm:
-
-```sh
-$ npm install koo
 ```
 
 ## API
 
-### koo.get()
+### koo.get([name])
 
-  Get all document cookies object
+  Get cookies
 
 ```js
-{
-  'name1' : 'value1',
-  'name2' : 'value2',
-  ...
-  'nameN' : 'valueN'
-}
+koo.get(); // {hello: 'world'}
+koo.get('hello'); // 'world'
 ```
-
-### koo.get(name)
-
-  Get defined cookie by name
 
 ### koo.set(name, value[, options])
 
-  Set cookie.
-
-  `options` is additional parameters object:
+  Set cookie with `options` object:
 
   * `expires`
   * `path`
@@ -54,4 +31,8 @@ $ npm install koo
 
 ### koo.remove(name)
 
-  Remove cookie by name
+  Remove cookie
+
+## License
+
+  MIT

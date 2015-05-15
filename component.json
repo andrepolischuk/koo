@@ -7,9 +7,9 @@
     "cookies"
   ],
   "repository": "andrepolischuk/koo",
-  "main" : "koo.js",
-  "scripts" : [
-    "koo.js"
+  "main": "index.js",
+  "scripts": [
+    "index.js"
   ],
   "license": "MIT"
 }

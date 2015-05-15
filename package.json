@@ -6,11 +6,8 @@
     "cookie",
     "cookies"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/andrepolischuk/koo.git"
-  },
-  "main": "koo.js",
+  "repository": "andrepolischuk/koo",
+  "main": "index.js",
   "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
   "license": "MIT"
 }
