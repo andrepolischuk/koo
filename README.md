@@ -6,6 +6,9 @@
 
 ```sh
 $ npm install --save koo
+```
+
+```sh
 $ component install andrepolischuk/koo
 ```
 
