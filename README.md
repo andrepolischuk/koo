@@ -2,14 +2,14 @@
 
   > Client-side cookies reader & writer
 
-## Instalation
+## Install
 
 ```sh
-$ npm install --save koo
+npm install --save koo
 ```
 
 ```sh
-$ component install andrepolischuk/koo
+component install andrepolischuk/koo
 ```
 
 ## API
