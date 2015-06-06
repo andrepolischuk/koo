@@ -1,7 +1,7 @@
 {
   "name": "koo",
   "description": "Client-side cookies reader & writer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "keywords": [
     "document",
     "cookie",
