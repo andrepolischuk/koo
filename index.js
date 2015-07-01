@@ -14,7 +14,7 @@ module.exports.get = function(name) {
   var split = document.cookie.split(';');
   var cookies = {};
 
-  for (var i = 0, item; i < split.length; i++) {
+  for (var i = 0, item, len = split.length; i < len; i++) {
     item = split[i].replace(/^(\s|\u00A0)+/g, '').split('=');
     cookies[item[0]] = decodeURIComponent(item[1]);
   }
