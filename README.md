@@ -1,6 +1,6 @@
 # koo
 
-  > Client-side cookies reader & writer
+> Client-side cookies reader & writer
 
 ## Install
 
@@ -8,15 +8,11 @@
 npm install --save koo
 ```
 
-```sh
-component install andrepolischuk/koo
-```
-
 ## API
 
 ### koo.get([name])
 
-  Get cookies
+Get cookies
 
 ```js
 koo.get(); // {hello: 'world'}
@@ -25,17 +21,17 @@ koo.get('hello'); // 'world'
 
 ### koo.set(name, value[, options])
 
-  Set cookie with `options` object:
+Set cookie with `options` object:
 
-  * `expires`
-  * `path`
-  * `domain`
-  * `secure`
+* `expires`
+* `path`
+* `domain`
+* `secure`
 
 ### koo.remove(name[, options])
 
-  Remove cookie
+Remove cookie
 
 ## License
 
-  MIT
+MIT
