@@ -32,7 +32,7 @@ koo.get('hello'); // 'world'
   * `domain`
   * `secure`
 
-### koo.remove(name)
+### koo.remove(name[, options])
 
   Remove cookie
 

@@ -56,10 +56,13 @@ module.exports.set = function(name, value, options) {
  * Expose remove cookie
  *
  * @param  {String} name
+ * @param  {Object} options
  * @return {String}
  * @api public
  */
 
-module.exports.remove = function(name) {
-  return module.exports.set(name, '', {expires: -1});
+module.exports.remove = function(name, options) {
+  options = options || {};
+  options.expires = -1;
+  return module.exports.set(name, '', options);
 };
