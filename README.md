@@ -26,6 +26,7 @@ Set cookie with `options` object:
 * `expires`
 * `path`
 * `domain`
+* `samesite`
 * `secure`
 
 ### koo.remove(name[, options])
