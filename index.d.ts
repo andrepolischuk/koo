@@ -2,6 +2,7 @@ export interface CookieOptions {
   expires?: number | Date
   path?: string
   domain?: string
+  samesite?: 'strict' | 'lax' | 'none'
   secure?: boolean
 }
 

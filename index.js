@@ -46,6 +46,7 @@ module.exports.set = function(name, value, options) {
   cookie += date.toUTCString ? '; expires=' + date.toUTCString() : '';
   cookie += options.path ? '; path=' + options.path : '';
   cookie += options.domain ? '; domain=' + options.domain : '';
+  cookie += options.samesite ? '; samesite=' + options.samesite : '';
   cookie += options.secure ? '; secure' : '';
 
   document.cookie = cookie;
